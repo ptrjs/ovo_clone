@@ -15,7 +15,7 @@ class MainNavigationView extends StatefulWidget {
         body: IndexedStack(
           index: controller.selectedIndex,
           children: [
-            const HomeView(),
+            HomeView(),
             Container(
               color: Colors.green,
             ),
@@ -47,9 +47,9 @@ class MainNavigationView extends StatefulWidget {
               onPressed: () {
                 // Aksi yang ingin Anda lakukan saat Floating Action Button ditekan.
               },
-              backgroundColor:
-                  primaryColor,
-              child: const Icon(Icons.qr_code), // Ganti dengan warna yang diinginkan.
+              backgroundColor: primaryColor,
+              child: const Icon(
+                  Icons.qr_code), // Ganti dengan warna yang diinginkan.
             ),
           ),
         ),
