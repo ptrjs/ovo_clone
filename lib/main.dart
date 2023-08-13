@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       navigatorKey: Get.navigatorKey,
       theme: getDefaultTheme(),
-      home: MainNavigationView(),
+      home: const MainNavigationView(),
     );
   }
 }

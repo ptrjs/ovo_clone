@@ -57,13 +57,13 @@ ThemeData getDefaultTheme() {
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8.0),
-        borderSide: BorderSide(
+        borderSide: const BorderSide(
           color: Colors.transparent,
         ),
       ),
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8.0),
-        borderSide: BorderSide(
+        borderSide: const BorderSide(
           color: Colors.red,
         ),
       ),
@@ -80,7 +80,7 @@ ThemeData getDefaultTheme() {
         ),
       ),
       filled: true,
-      fillColor: Color(0xfffbfbfb),
+      fillColor: const Color(0xfffbfbfb),
     ),
   );
 }

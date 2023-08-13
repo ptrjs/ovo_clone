@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ovo_clone/core.dart';
 import 'package:ovo_clone/shared/theme/theme_config.dart';
-import '../controller/main_navigation_controller.dart';
 
 class MainNavigationView extends StatefulWidget {
-  MainNavigationView({Key? key}) : super(key: key);
+  const MainNavigationView({Key? key}) : super(key: key);
 
   Widget build(context, MainNavigationController controller) {
     controller.view = this;
@@ -16,7 +15,7 @@ class MainNavigationView extends StatefulWidget {
         body: IndexedStack(
           index: controller.selectedIndex,
           children: [
-            HomeView(),
+            const HomeView(),
             Container(
               color: Colors.green,
             ),
@@ -48,9 +47,9 @@ class MainNavigationView extends StatefulWidget {
               onPressed: () {
                 // Aksi yang ingin Anda lakukan saat Floating Action Button ditekan.
               },
-              child: Icon(Icons.qr_code),
               backgroundColor:
-                  primaryColor, // Ganti dengan warna yang diinginkan.
+                  primaryColor,
+              child: const Icon(Icons.qr_code), // Ganti dengan warna yang diinginkan.
             ),
           ),
         ),
