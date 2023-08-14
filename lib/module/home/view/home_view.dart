@@ -221,6 +221,97 @@ class HomeView extends StatefulWidget {
                                   ),
                                 ],
                               ),
+                              const SizedBox(
+                                height: 4.0,
+                              ),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        IconButton(
+                                          onPressed: () {},
+                                          icon: const Icon(
+                                            Icons.add_box,
+                                            size: 24.0,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Top Up",
+                                          style: TextStyle(
+                                            fontSize: 12.0,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        IconButton(
+                                          onPressed: () {},
+                                          icon: Icon(
+                                            MdiIcons.transfer,
+                                            size: 24.0,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Transfer",
+                                          style: TextStyle(
+                                            fontSize: 12.0,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        IconButton(
+                                          onPressed: () {},
+                                          icon: Icon(
+                                            Icons.call_received,
+                                            size: 24.0,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Withdraw",
+                                          style: TextStyle(
+                                            fontSize: 12.0,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      children: [
+                                        IconButton(
+                                          onPressed: () {},
+                                          icon: const Icon(
+                                            Icons.history,
+                                            size: 24.0,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Text(
+                                          "History",
+                                          style: TextStyle(
+                                            fontSize: 12.0,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         ),
