@@ -59,146 +59,174 @@ class HomeView extends StatefulWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(0),
           child: Column(
             children: [
               Container(
-                height: 150.0,
+                width: MediaQuery.of(context).size.width,
+                height: 400,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [primaryColor, secondaryColor],
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(12.0),
                   ),
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(
-                      8.0,
-                    ),
-                  ),
+                  color: Colors.white,
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text(
-                        "OVO Cash",
-                        style: TextStyle(
-                          fontSize: 14.0,
-                          fontWeight: FontWeight.bold,
+                child: Stack(
+                  children: [
+                    Container(
+                      height: 100,
+                      width: MediaQuery.of(context).size.width,
+                      decoration: BoxDecoration(
+                        color: backgroundColor,
+                      ),
+                    ),
+                    Positioned(
+                      top: 90,
+                      child: Container(
+                        height: 100,
+                        width: MediaQuery.of(context).size.width,
+                        decoration: const BoxDecoration(
                           color: Colors.white,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(12.0),
+                          ),
                         ),
                       ),
-                      Row(
-                        children: [
-                          const Text(
-                            "Total Balance",
-                            style: TextStyle(
-                              fontSize: 12.0,
-                              color: Colors.white,
+                    ),
+                    Positioned(
+                      left: 20,
+                      right: 20,
+                      top: 20,
+                      child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [primaryColor, secondaryColor],
+                          ),
+                          borderRadius: const BorderRadius.all(
+                            Radius.circular(
+                              8.0,
                             ),
                           ),
-                          IconButton(
-                            onPressed: () {},
-                            icon: Icon(
-                              MdiIcons.eyeLock,
-                              size: 16.0,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Text(
-                            "Rp",
-                            style: TextStyle(
-                              fontSize: 12.0,
-                              color: Colors.white,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 4.0,
-                          ),
-                          Text(
-                            "10.000",
-                            style: TextStyle(
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
-                          ),
-                          const SizedBox(
-                            width: 10.0,
-                          ),
-                          Spacer(),
-                          Container(
-                            height: 36,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(12.0),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                "OVO Cash",
+                                style: TextStyle(
+                                  fontSize: 14.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
                               ),
-                              color: Colors.white,
-                            ),
-                            padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Icon(
-                                  Icons.money,
-                                  size: 16.0,
-                                  color: primaryColor,
-                                ),
-                                const SizedBox(
-                                  width: 4.0,
-                                ),
-                                Text(
-                                  "500",
-                                  style: TextStyle(
-                                    fontSize: 12.0,
-                                    fontWeight: FontWeight.bold,
-                                    color: primaryColor,
+                              Row(
+                                children: [
+                                  const Text(
+                                    "Total Balance",
+                                    style: TextStyle(
+                                      fontSize: 12.0,
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                ),
-                                const SizedBox(
-                                  width: 4.0,
-                                ),
-                                Text(
-                                  "Points",
-                                  style: TextStyle(
-                                    fontSize: 12.0,
-                                    fontWeight: FontWeight.bold,
-                                    color: primaryColor,
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      MdiIcons.eyeLock,
+                                      size: 16.0,
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                ),
-                                const SizedBox(
-                                  width: 4.0,
-                                ),
-                                Container(
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      IconButton(
-                                        onPressed: () {},
-                                        icon: Icon(
-                                          Icons.chevron_right,
-                                          size: 18.0,
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "Rp",
+                                    style: TextStyle(
+                                      fontSize: 12.0,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 4.0,
+                                  ),
+                                  Text(
+                                    "10.000",
+                                    style: TextStyle(
+                                      fontSize: 14.0,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  Spacer(),
+                                  Container(
+                                    height: 36,
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(12.0),
+                                      ),
+                                      color: Colors.white,
+                                    ),
+                                    padding:
+                                        const EdgeInsets.fromLTRB(12, 0, 0, 0),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Icon(
+                                          Icons.money,
+                                          size: 16.0,
                                           color: primaryColor,
                                         ),
-                                      ),
-                                    ],
+                                        const SizedBox(
+                                          width: 4.0,
+                                        ),
+                                        Text(
+                                          "500",
+                                          style: TextStyle(
+                                            fontSize: 12.0,
+                                            fontWeight: FontWeight.bold,
+                                            color: primaryColor,
+                                          ),
+                                        ),
+                                        const SizedBox(
+                                          width: 4.0,
+                                        ),
+                                        Text(
+                                          "Points",
+                                          style: TextStyle(
+                                            fontSize: 12.0,
+                                            fontWeight: FontWeight.bold,
+                                            color: primaryColor,
+                                          ),
+                                        ),
+                                        const SizedBox(
+                                          width: 4.0,
+                                        ),
+                                        IconButton(
+                                          onPressed: () {},
+                                          icon: Icon(
+                                            Icons.chevron_right,
+                                            size: 12.0,
+                                            color: primaryColor,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ),
-                              ],
-                            ),
+                                ],
+                              ),
+                            ],
                           ),
-                        ],
+                        ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ],
