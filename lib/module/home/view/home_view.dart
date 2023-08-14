@@ -80,6 +80,7 @@ class HomeView extends StatefulWidget {
                         color: backgroundColor,
                       ),
                     ),
+                    //ini buat bikin rounded container yang bagian atas
                     Positioned(
                       top: 90,
                       child: Container(
@@ -93,6 +94,7 @@ class HomeView extends StatefulWidget {
                         ),
                       ),
                     ),
+                    //container ovo cash
                     Positioned(
                       left: 20,
                       right: 20,
@@ -320,6 +322,7 @@ class HomeView extends StatefulWidget {
                   ],
                 ),
               ),
+              Text("textluar"),
             ],
           ),
         ),
