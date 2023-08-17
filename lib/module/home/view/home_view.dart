@@ -1,13 +1,12 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:ovo_clone/core.dart';
+import 'package:ovo_clone/module/home/widget/carousel_basic.dart';
 import 'package:ovo_clone/module/home/widget/carousel_indicator.dart';
 import 'package:ovo_clone/module/home/widget/category_picker.dart';
 import 'package:ovo_clone/module/home/widget/menu_favorite.dart';
 import 'package:ovo_clone/module/home/widget/menu_image.dart';
 import 'package:ovo_clone/shared/theme/theme_config.dart';
-import '../controller/home_controller.dart';
 
 class HomeView extends StatefulWidget {
   HomeView({Key? key}) : super(key: key);
@@ -33,7 +32,7 @@ class HomeView extends StatefulWidget {
         ),
         actions: [
           Padding(
-            padding: EdgeInsets.fromLTRB(0, 14, 18, 10),
+            padding: const EdgeInsets.fromLTRB(0, 14, 18, 10),
             child: Container(
               decoration: BoxDecoration(
                 color: secondaryBgColor,
@@ -41,7 +40,7 @@ class HomeView extends StatefulWidget {
                     16), // Atur nilai sesuai keinginan Anda
               ),
               child: Padding(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Row(
                   children: [
                     Icon(
@@ -49,7 +48,7 @@ class HomeView extends StatefulWidget {
                       size: 18.0,
                       color: primaryColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 8.0,
                     ),
                     Text(
@@ -69,14 +68,14 @@ class HomeView extends StatefulWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.all(0),
+          padding: const EdgeInsets.all(0),
           child: Column(
             children: [
               Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height - 250,
-                decoration: BoxDecoration(
-                  color: Colors.yellow,
+                height: MediaQuery.of(context).size.height - 350,
+                decoration: const BoxDecoration(
+                  color: Colors.white,
                 ),
                 child: Stack(
                   children: [
@@ -91,9 +90,9 @@ class HomeView extends StatefulWidget {
                     Positioned(
                       top: 90,
                       child: Container(
-                        height: 100,
+                        height: 150,
                         width: MediaQuery.of(context).size.width,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.all(
                             Radius.circular(12.0),
@@ -103,19 +102,19 @@ class HomeView extends StatefulWidget {
                     ),
                     //container untuk mengisi listvew dan fitur menu
                     Positioned(
-                      top: 200,
+                      top: 220,
                       child: Container(
-                        padding: EdgeInsets.all(10.0),
+                        padding: const EdgeInsets.all(10.0),
                         height: MediaQuery.of(context).size.height,
                         width: MediaQuery.of(context).size.width,
-                        decoration: BoxDecoration(
-                          color: Colors.cyan,
+                        decoration: const BoxDecoration(
+                          color: Colors.white,
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             CategoryPicker(
-                              items: [
+                              items: const [
                                 {
                                   "label": "Favorite",
                                   "value": "Favorite",
@@ -142,7 +141,7 @@ class HomeView extends StatefulWidget {
                             ),
                             IndexedStack(
                               index: controller.selectedIndex,
-                              children: [
+                              children: const [
                                 MenuFavorite(),
                                 MenuImage(),
                                 MenuFavorite(),
@@ -167,18 +166,18 @@ class HomeView extends StatefulWidget {
                             end: Alignment.bottomCenter,
                             colors: [primaryColor, secondaryColor],
                           ),
-                          borderRadius: BorderRadius.all(
+                          borderRadius: const BorderRadius.all(
                             Radius.circular(
                               8.0,
                             ),
                           ),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(12.0),
+                          padding: const EdgeInsets.all(12.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 "OVO Cash",
                                 style: TextStyle(
                                   fontSize: 14.0,
@@ -188,7 +187,7 @@ class HomeView extends StatefulWidget {
                               ),
                               Row(
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Total Balance",
                                     style: TextStyle(
                                       fontSize: 12.0,
@@ -207,17 +206,17 @@ class HomeView extends StatefulWidget {
                               ),
                               Row(
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Rp",
                                     style: TextStyle(
                                       fontSize: 12.0,
                                       color: Colors.white,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 4.0,
                                   ),
-                                  Text(
+                                  const Text(
                                     "10.000",
                                     style: TextStyle(
                                       fontSize: 14.0,
@@ -225,16 +224,16 @@ class HomeView extends StatefulWidget {
                                       color: Colors.white,
                                     ),
                                   ),
-                                  Spacer(),
+                                  const Spacer(),
                                   Container(
                                     height: 36,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       borderRadius: BorderRadius.all(
                                         Radius.circular(12.0),
                                       ),
                                       color: Colors.white,
                                     ),
-                                    padding: EdgeInsets.fromLTRB(12, 0, 0, 0),
+                                    padding: const EdgeInsets.fromLTRB(12, 0, 0, 0),
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
@@ -244,7 +243,7 @@ class HomeView extends StatefulWidget {
                                           size: 16.0,
                                           color: primaryColor,
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 4.0,
                                         ),
                                         Text(
@@ -255,7 +254,7 @@ class HomeView extends StatefulWidget {
                                             color: primaryColor,
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 4.0,
                                         ),
                                         Text(
@@ -266,7 +265,7 @@ class HomeView extends StatefulWidget {
                                             color: primaryColor,
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 4.0,
                                         ),
                                         IconButton(
@@ -282,7 +281,7 @@ class HomeView extends StatefulWidget {
                                   ),
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 4.0,
                               ),
                               Row(
@@ -291,14 +290,14 @@ class HomeView extends StatefulWidget {
                                     child: Column(
                                       children: [
                                         IconButton(
-                                          onPressed: () {},
-                                          icon: Icon(
+                                          onPressed: () => Get.to(const TopUpView()),
+                                          icon: const Icon(
                                             Icons.add_box,
                                             size: 24.0,
                                             color: Colors.white,
                                           ),
                                         ),
-                                        Text(
+                                        const Text(
                                           "Top Up",
                                           style: TextStyle(
                                             fontSize: 12.0,
@@ -312,14 +311,15 @@ class HomeView extends StatefulWidget {
                                     child: Column(
                                       children: [
                                         IconButton(
-                                          onPressed: () {},
+                                          onPressed: () =>
+                                              Get.to(const TransferView()),
                                           icon: Icon(
                                             MdiIcons.transfer,
                                             size: 24.0,
                                             color: Colors.white,
                                           ),
                                         ),
-                                        Text(
+                                        const Text(
                                           "Transfer",
                                           style: TextStyle(
                                             fontSize: 12.0,
@@ -334,13 +334,13 @@ class HomeView extends StatefulWidget {
                                       children: [
                                         IconButton(
                                           onPressed: () {},
-                                          icon: Icon(
+                                          icon: const Icon(
                                             Icons.call_received,
                                             size: 24.0,
                                             color: Colors.white,
                                           ),
                                         ),
-                                        Text(
+                                        const Text(
                                           "Withdraw",
                                           style: TextStyle(
                                             fontSize: 12.0,
@@ -355,13 +355,13 @@ class HomeView extends StatefulWidget {
                                       children: [
                                         IconButton(
                                           onPressed: () {},
-                                          icon: Icon(
+                                          icon: const Icon(
                                             Icons.history,
                                             size: 24.0,
                                             color: Colors.white,
                                           ),
                                         ),
-                                        Text(
+                                        const Text(
                                           "History",
                                           style: TextStyle(
                                             fontSize: 12.0,
@@ -391,10 +391,10 @@ class HomeView extends StatefulWidget {
                 decoration: const BoxDecoration(
                   color: Colors.white,
                 ),
-                child: Column(
+                child: const Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
+                      padding: EdgeInsets.fromLTRB(0, 12, 0, 0),
                       child: CarouselIndicator(),
                     ),
                   ],
@@ -406,21 +406,31 @@ class HomeView extends StatefulWidget {
               ),
               // container gambar carousel
               Container(
-                height: 160,
+                height: 280,
                 width: MediaQuery.of(context).size.width,
                 decoration: const BoxDecoration(
                   color: Colors.white,
                 ),
-                child: Column(
+                child: const Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 12, 0, 0),
-                      child: CarouselIndicator(),
+                      padding: EdgeInsets.all(12.0),
+                      child: Text(
+                        "Recommendation Choice",
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(0, 12, 0, 0),
+                      child: CarouselBasic(),
                     ),
                   ],
                 ),
               ),
-              Text("textluar"),
             ],
           ),
         ),

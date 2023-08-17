@@ -39,17 +39,14 @@ class MainNavigationView extends StatefulWidget {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               border: Border.all(
-                color: Colors.white, // Warna border
-                width: 4.0, // Lebar border
+                color: Colors.white,
+                width: 4.0,
               ),
             ),
             child: FloatingActionButton(
-              onPressed: () {
-                // Aksi yang ingin Anda lakukan saat Floating Action Button ditekan.
-              },
+              onPressed: () {},
               backgroundColor: primaryColor,
-              child: const Icon(
-                  Icons.qr_code), // Ganti dengan warna yang diinginkan.
+              child: const Icon(Icons.qr_code),
             ),
           ),
         ),
