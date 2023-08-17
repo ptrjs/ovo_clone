@@ -4,7 +4,7 @@ Cloning OVO UI Only, for learning purpose.
 
 # Screenshot
 
-![image](https://github.com/ptrjs/ovo_clone/assets/34370936/d9228246-dc59-4715-a5b9-ab09d7ce0d54) 
+![image](https://github.com/ptrjs/ovo_clone/assets/34370936/d9228246-dc59-4715-a5b9-ab09d7ce0d54 | width=400px | height =100px) 
 ![image](https://github.com/ptrjs/ovo_clone/assets/34370936/f6cd2dec-946e-49b9-b3b0-751eb3e3c83b) 
 ![image](https://github.com/ptrjs/ovo_clone/assets/34370936/e44918b8-c982-45d3-a4b9-efb6387d7486)
 ![image](https://github.com/ptrjs/ovo_clone/assets/34370936/e7070241-9514-471c-a3b3-192617d1d3a9) 
