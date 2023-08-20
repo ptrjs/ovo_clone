@@ -1,8 +1,9 @@
 # ovo_clone
 
-Cloning OVO UI Only, for learning purposes.
+I am cloning OVO Apps (UI Only) made by Flutter.
+The purpose of making this app is to learn Flutter and add it to my portfolio. 
 
-# Screenshot
+## Screenshot
 
 <img src="https://github.com/ptrjs/ovo_clone/assets/34370936/d9228246-dc59-4715-a5b9-ab09d7ce0d54" width="300">
 <img src="https://github.com/ptrjs/ovo_clone/assets/34370936/f6cd2dec-946e-49b9-b3b0-751eb3e3c83b" width="300">
